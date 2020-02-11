@@ -21,9 +21,13 @@ public class OperatorFunction {
     }
 
     public static double divide(double a, double b) {
-        if (b == ZERO) {
+        checkIsZero(b);
+        return a / b;
+    }
+
+    private static void checkIsZero(double num) throws IllegalArgumentException {
+        if (num == ZERO) {
             throw new IllegalArgumentException(ErrorView.INVALID_EXPRESSION_ERROR_STR);
         }
-        return a / b;
     }
 }
