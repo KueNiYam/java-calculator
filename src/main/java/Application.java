@@ -1,4 +1,4 @@
-import calculator.Calculator;
+import calculator.StringCalculator;
 import view.ErrorView;
 import view.InputView;
 import view.OutputView;
@@ -13,7 +13,7 @@ public class Application {
 
     public static void useCalculator(String input) {
         try {
-            String result = Calculator.calculate(input);
+            String result = StringCalculator.calculate(input);
             OutputView.printCalculateResult(result);
         } catch (IllegalArgumentException e) {
             ErrorView.println(e.getMessage());
