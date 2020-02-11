@@ -6,10 +6,10 @@ import java.util.Arrays;
 import java.util.function.BinaryOperator;
 
 public enum Operator {
-    ADDITION(OperatorRepository::add, "+"),
-    SUBTRACTION(OperatorRepository::subtract, "-"),
-    MULTIPLICATION(OperatorRepository::multiply, "*"),
-    DIVISION(OperatorRepository::divide, "/");
+    ADDITION(OperatorFunction::add, "+"),
+    SUBTRACTION(OperatorFunction::subtract, "-"),
+    MULTIPLICATION(OperatorFunction::multiply, "*"),
+    DIVISION(OperatorFunction::divide, "/");
 
     private BinaryOperator<Double> operate;
     private String symbol;

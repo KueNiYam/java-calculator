@@ -2,10 +2,10 @@ package calculator;
 
 import view.ErrorView;
 
-public class OperatorRepository {
+public class OperatorFunction {
     private static final double ZERO = 0d;
 
-    private OperatorRepository() {
+    private OperatorFunction() {
     }
 
     public static double add(double a, double b) {
